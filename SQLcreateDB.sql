@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS `establecimientos` (
 CREATE TABLE IF NOT EXISTS `potreros` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(100) NOT NULL,
+  `cantidad_hectareas` INT,
   `establecimiento_id` INT,
   PRIMARY KEY (`id`),
   FOREIGN KEY (`establecimiento_id`) REFERENCES `establecimientos` (`id`)
